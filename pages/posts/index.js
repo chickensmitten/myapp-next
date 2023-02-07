@@ -1,4 +1,5 @@
-import PostItem from '@/components/posts/postItem';
+import PostItem from '@/components/posts/PostItem';
+import Link from 'next/link';
 import { Fragment } from 'react';
 import PostApi from '../api/posts';
 
@@ -10,6 +11,9 @@ function AllPostsPage({ posts }) {
       {posts.map((post) => (
         <PostItem key={post._id} post={post} />
       ))}
+      <Link href="/posts/new">
+        Create New Post
+      </Link>
     </Fragment>
   );
 }

@@ -1,4 +1,4 @@
-import PostItem from '@/components/posts/postItem';
+import PostItem from '@/components/posts/PostItem';
 import PostApi from '../api/posts';
 
 const PostDetail = ({ post }) => {
